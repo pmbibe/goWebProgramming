@@ -6,7 +6,7 @@ import (
 )
 
 func connecttoDB(user, password, hostname, port, database string) string {
-	return user + ":" + password + "@" + "tcp(" + hostname + ":" + port + ")/" + database
+	return user + ":" + password + "@" + "tcp(" + hostname + ":" + port + ")/" + database + "?parseTime=true"
 
 }
 func connect() {
